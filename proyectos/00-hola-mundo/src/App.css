@@ -1,0 +1,79 @@
+.contenedorTarjetaDeUsuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    min-width: 350px;
+    padding: 1rem;
+    box-shadow: 1px 1px 2px rgb(246 246 246);
+    border-radius: 1rem;
+
+}
+
+.contenedorTarjetaDeUsuario header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorTarjetaDeUsuario header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 3px white;
+}
+
+.contenedorTarjetaDeUsuario header div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.contenedorTarjetaDeUsuario aside button{
+    background: none;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 2px 10px;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 500;
+    border-radius: 2rem;
+    transition: 0.4s ease-in background;
+}
+
+.contenedorTarjetaDeUsuario aside button:hover {
+    background-color: cornflowerblue;
+}
+
+
+.contenedorTarjetaDeUsuario aside button.siguiendo{
+    width: 120px;
+    background-color: transparent;
+    border: 1px solid rgb(190, 190, 190);
+    color: white;
+    transition: 0.4s ease-in background;
+}
+
+.contenedorTarjetaDeUsuario aside button.siguiendo:hover {
+    background-color: rgba(255, 0, 0, 0.223);
+    color: red;
+    border: 1px solid red;
+}
+
+.contenedorTarjetaDeUsuario aside button.siguiendo:hover .textoDejarDeSeguir {
+    display: block;
+}
+
+.contenedorTarjetaDeUsuario aside button.siguiendo:hover .textoPorDefecto {
+    display: none;
+}
+
+
+.isFollowing{
+    color: rgb(147, 148, 148);
+}
+
+.textoDejarDeSeguir{
+    display: none;
+}
